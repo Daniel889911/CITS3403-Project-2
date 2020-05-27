@@ -9,7 +9,9 @@
         <header>
          <nav>
           <ul>
-            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="/index">Home</a></li>
+            <li><a href="/results">Results</a></li>
+            <li><a href="/create_quiz">Create-Quiz</a></li>
             {% if current_user.is_anonymous %}
             <li><a href="{{ url_for('login') }}">Login</a></li>
             {% else %}
