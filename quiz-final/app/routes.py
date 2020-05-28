@@ -63,7 +63,7 @@ def createquiz(): #currently used
     #if current_user.is_authenticated: # fix chekc for users
     #    return redirect(url_for('index'))
     if form.validate_on_submit():
-        quiz = Quiz(quizname=form.quizname.data, q1=form.q1.data, q2=form.q1.data, q3=form.q1.data)
+        quiz = Quiz(quizname=form.quizname.data, q1=form.q1.data, q2=form.q2.data, q3=form.q3.data)
         db.session.add(quiz)
         db.session.commit()
         flash('Congratulations, you have made a quiz')
